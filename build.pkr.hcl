@@ -22,7 +22,6 @@ source "azure-arm" "ubuntu-arm-lts" {
 
 build {
   source "source.azure-arm.ubuntu-arm-lts" {
-    # name               = "jenkins-agent-ubuntu-22.04-amd64"
     location                          = var.azure_region
     managed_image_name                = "jenkins_test_ARM64_${local.date}"
     managed_image_resource_group_name = "dev-packer-images"
